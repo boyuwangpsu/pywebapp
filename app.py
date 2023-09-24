@@ -10,9 +10,6 @@ def init():
 
     st.session_state.pages = {
         'Homepage': home.main,
-        'About me': about.main,
-        'Source': source.main,
-        'Message me': mail.main,
         'Guess Number': guess_number.main,
         'Guess Word': guess_word.main,
         'Tic Tac Toe': tic_tac_toe.main,
@@ -85,12 +82,7 @@ def main():
                 on_change=set_page,
             )
 
-        about.button('🧑‍💻 Myself', on_click=set_page, args=('About me',))
-        source.button('📁 Source', on_click=set_page, args=('Source',))
 
-        contact[1].button(
-            '✉️ Send me a message', on_click=set_page, args=('Message me',)
-        )
 
         if st.session_state.page == 'Homepage':
             st.image('https://c.tenor.com/-420uI8y-RkAAAAd/anime-welcome.gif')
