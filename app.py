@@ -13,7 +13,6 @@ def init():
         'Guess Number': guess_number.main,
         'Guess Word': guess_word.main,
         'Tic Tac Toe': tic_tac_toe.main,
-        'Bubble sort': bubble_sort.main,
     }
 
 
