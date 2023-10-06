@@ -13,6 +13,7 @@ def init():
         'Guess Number': guess_number.main,
         'Guess Word': guess_word.main,
         'Tic Tac Toe': tic_tac_toe.main,
+        'Bubble sort': bubble_sort.main
     }
 
 
@@ -77,7 +78,7 @@ def main():
         if st.session_state.project and st.session_state.game:
             st.selectbox(
                 'List of projects',
-                ['Guess Number', 'Guess Word', 'Tic Tac Toe'],
+                ['Guess Number', 'Guess Word', 'Tic Tac Toe', 'Bubble sort'],
                 key='set',
                 on_change=set_page,
             )
